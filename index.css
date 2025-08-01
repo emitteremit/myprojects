@@ -1,9 +1,6 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #fff;
-  margin: 0;
-  padding: 0;
-  /* overflow-x: hidden; */
 }
 
 .navbar {
@@ -41,43 +38,44 @@ body {
   color: #3cd13c;
 }
 
-/* .hero {
+.hero {
   padding: 80px 20px;
-} */
+  /* margin-bottom: 40px; */
+}
 
-/* ---------- Desktop & Tablet view (768px and up) ---------- */
+/* Desktop and tablet view */
 @media (min-width: 768px) {
   .postalone {
     width: 100%;
-    max-width: 700px;
     height: auto;
+    max-width: 700px;
     object-fit: cover;
     border-radius: 10px;
   }
 
   .text-offset {
     margin-top: 100px;
+    /* Pushes the text downward */
   }
 
   .background1 {
     display: none;
   }
-
-  .boost {
+  .boost{
     padding-top: 150px;
   }
-
-  .bust {
+  .bust{
     padding-top: 100px;
   }
 }
 
-/* ---------- Mobile view (below 768px) ---------- */
+
+/* Mobile view */
 @media (max-width: 767.98px) {
   .postalone {
     width: 100%;
-    max-width: 700px;
     height: auto;
+    max-width: 700px;
     object-fit: cover;
     border-radius: 10px;
   }
@@ -95,25 +93,14 @@ body {
   .background2 {
     display: none;
   }
-
-  .carosuel23 {
+  .carosuel23{
     padding-top: 40px;
   }
-
-  .boost {
-    text-align: center;
-  }
-
-  .con3 {
-    padding: 20px;
-  }
-
-  .btnme {
-    width: 100%;
+  .boost{
+    margin-top: 0;
   }
 }
 
-/* ---------- Custom container for text + image ---------- */
 .custom-container {
   display: flex;
   flex-wrap: wrap;
@@ -129,7 +116,7 @@ body {
 
 .text-section h2 {
   color: #6c757d;
-  /* Bootstrap text-secondary */
+  /* Bootstrap's text-secondary */
   margin-top: 2rem;
   font-weight: 600;
 }
@@ -149,25 +136,30 @@ body {
   height: auto;
 }
 
-/* Responsive text/image sections on mobile */
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .text-section {
     padding-left: 0;
     text-align: center;
-    margin-top: 1rem;
+    margin: top 1px;
   }
 
   .rocky {
     display: flex;
     flex-direction: column;
   }
+
+  .con3 {
+    padding-left: 30px;
+    padding-top: 30px;
+  }
 }
 
 .rocky {
-  margin-top: 0;
+  margin-top: 0px;
 }
 
-.zoom-img {
+.img4 {
   width: 100%;
   height: auto;
   border-radius: 10px;
@@ -200,6 +192,7 @@ body {
 .carousel1 {
   background-color: rgb(228, 226, 226);
   border-radius: 5px;
+  height: auto;
 }
 
 .carotext,
@@ -210,9 +203,8 @@ body {
 
 .success {
   width: 100%;
-  background-color: rgb(3, 1, 19);
-  padding: 20px 0;
-  color:white !important;
+  height: auto;
+  background-color: green;
 }
 
 .water {
@@ -229,47 +221,21 @@ body {
   padding-left: 70px;
   padding-bottom: 30px;
 }
-
-.btnme {
+.btnme{
   width: 150px;
   height: 50px;
   border-radius: 10px;
   border: none;
-  background-color: white;
-  color: black;
 }
-
-.pos {
+.pos{
   width: 50%;
   height: auto;
 }
-
-.angelo {
+.angelo{
   font-weight: lighter;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-.links {
+.links{
   text-decoration: none;
   color: black;
-}
-
-.memories {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: black;
-  font-size: 4vw;
-  text-align: center;
-  width: 90%;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-shadow: 2px 4px 8px rgb(159, 209, 235);
-  backdrop-filter: blur(2px);
-}
-.zoom-img{
-  transition: transform 0.3s ease;
-}
-.zoom-img:hover {
-  transform: scale(2);
 }
